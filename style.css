@@ -1,54 +1,59 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Divide 3 col into equal width  */
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
+body {
+  background-color: beige;
+  color: black;
 }
 
-.price {
-  list-style-type: none;
-  border: 2px solid black;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.main-container {
+  width: 80vw;
+  height: 80vh;
+  border-radius: 0.3rem;
+}
+.image-container {
+  height: 40vh;
+  border-radius: 0.3rem;
 }
 
-.price:hover {
-  box-shadow: 0 8px 15px 0 rgb(255, 0, 119);
+.content-container {
+  height: 30vh;
+  padding: 2rem;
+}
+.flag {
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.name {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.content {
+  margin: 0.3rem 0;
 }
 
-.price .header {
-  background-color: rgb(0, 89, 255);
-  color: whitesmoke;
-  font-size: 28px;
+.sub-content {
+  color: gray;
 }
 
-.price li {
-  border-bottom: 4px solid rgb(171, 196, 228);
-  padding: 20px;
-  text-align: center;
-}
+@media only screen and (min-width: 992px) {
+  .main-container {
+    height: 60vh;
+  }
 
-.price .grey {
-  background-color: lightgray;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.button {
-  border: none;
-  color: rgb(10, 38, 131);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 580px) {
-  .columns {
-    width: 100%;
+  .image-container {
+    height: 30vh;
+  }
+  .content-container {
+    height: 30vh;
+  }
+  .name {
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  .content {
+    margin: 0.15rem 0;
   }
 }
