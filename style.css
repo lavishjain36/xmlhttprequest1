@@ -10,8 +10,8 @@ body {
 }
 
 .main-container {
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   border-radius: 0.3rem;
 }
 .image-container {
@@ -35,7 +35,7 @@ body {
 }
 
 .sub-content {
-  color: gray;
+  color: rgb(252, 27, 27);
 }
 
 @media only screen and (min-width: 992px) {

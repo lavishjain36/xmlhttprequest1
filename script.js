@@ -35,24 +35,39 @@ let countriesInfo = [
     capital: "Reykjavik",
   },
 ];
+
 const container = document.createElement("div");
 const row = document.createElement("div");
+
 container.setAttribute("class", "container-fluid");
 row.setAttribute("class", "row");
 container.append(row);
 countriesInfo.forEach((item) => {
-  row.innerHTML += `<div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center p-2">
-            <div class="main-container card">
-                <div class="image-container">
-                    <img src="${item.flag}" alt="${item.name}" class="flag w-100 h-100">
-                </div>
-                <div class="content-container">
-                    <h5 class="name">${item.name}</h5>
-                    <p class="content">Population:<span class="sub-content"> ${item.population}</span></p>
-                    <p class="content">Region:<span class="sub-content">${item.region}</span></p>
-                    <p class="content">Capital:<span class="sub-content">${item.capital}</span></p>
-                </div>
-            </div>
-        </div>`;
+  row.innerHTML += `
+<div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center p-2">
+<div class="main-container card">
+<div class="image-container">
+<img src="${item.flag}" alt="${item.name}" class="flag w-100 h-100">
+</div>
+
+<div class="content-container">
+<h4 class="name">${item.name}</h4>
+<p class="content">Population:<span class="sub-content">${item.population}</span></p>
+<p class="content">Region:<span class="sub-content">${item.region}</span></p>
+
+<p class="content">Capital:<span class="sub-content">${item.capital}</span></p>
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+`;
 });
+
 document.body.append(container);
