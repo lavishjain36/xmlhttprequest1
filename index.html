@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bootstrap Navbar</title>
+    <title>Bootstrap Grid with container fluid</title>
 
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul class="nav nav-tabs flex-column">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact us</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Technology</a>
-      </li>
-    </ul>
+    <div class="container-fluid">
+      <h1>Grid container</h1>
+      <div class="row">
+        <div class="col-6 bg-success">
+          First col
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+            quidem ad quae molestias atque architecto laborum est amet, deserunt
+            voluptatum ea minus quibusdam dolores velit repellendus
+            reprehenderit in iste quod.
+          </p>
+        </div>
+        <div class="col-6 bg-primary">Second col</div>
+      </div>
+      <div class="row">
+        <div class="col-5 bg-primary">Third col</div>
+        <div class="col-5 bg-secondary">Fourth</div>
+        <div class="col-2 bg-warning">Fifth</div>
+      </div>
+      <div class="row">
+        <div class="col-12 bg-danger">Third row</div>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
+
+<!-- container=>row=>col -->
